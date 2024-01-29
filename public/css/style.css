@@ -1,0 +1,66 @@
+body {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo img{
+    width: 200px;
+}
+.welcome-text {
+    margin-bottom: 50px;
+}
+.welcome-text p{
+    color: #aaa;
+}
+.button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: none;
+    border: none;
+    border-radius: 6px;
+    width: 80%;
+}
+.button:hover{
+    font-size: 700;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.button-register{
+    background-color: #4CAF50;
+    color: #fff;
+}
+.button-login{
+    border: 1px solid #4CAF50;
+    background-color: #fff;
+    color: #111;
+}
+
+
+.buttons{
+    display: block;
+}
+
+@media(min-width:767px){
+    .button {
+    width: 30%;
+}
+}
+@media(max-width:767px){
+    .welcome-text h3{
+        font-size: 18px;
+    }
+
+    .welcome-text p{
+        color: #aaa;
+        font-size: 16px;
+    }
+}
+@media(max-width:450px){
+    .logo img{
+        width: 150px;
+    }
+}
+

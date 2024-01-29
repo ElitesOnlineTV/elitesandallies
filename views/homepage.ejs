@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="/public/css/home.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="/public/img/elitessacco-bg.png" alt="">
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Register</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger">
+            <i class="fa fa-bars"></i>
+        </button>
+    </nav>
+    <div class="side-nav">
+        <span class="close-btn" href="#"> &times;</span>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="#">View Profile</a></li>
+        </ul>
+        <div class="prof-img">
+            <img class="profilePhoto" src="../public/img/elites-sacco-logo.jpeg" alt="Profile Photo">
+        </div>
+    </div>
+
+    <main>
+        <!-- Welcome note -->
+        <section class="welcome">
+            <div class="welcome-text">
+                <h1>Hello <span class="user-nam">Joseph</span></h1>
+                <p>Welcome to Elites Sacco a savings and credit cooperative society.</p>
+            </div>
+            <div class="welcome-img">
+                <img src="/public/img/elites-sacco-logo.jpeg" alt="Welcome Image">
+            </div>
+        </section>
+
+        <section class="acc-details">
+            <div class="acc-bal">
+                <p>Total amount of shares</p>
+                <h2>UGX: <span class="share-capital">500,000</span></h2>
+            </div>
+            <div class="acc-actions">
+                <div class="increase-shares">
+                    <p><i class="fa fa-plus-square"></i></p>
+                    <p>Add Shares</p>
+                </div>
+                <div class="take-loan">
+                    <p><i class="fa fa-credit-card"></i></p>
+                    <p>Apply Loan</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- news updates and article one big with image and two links with no images and link to see more  -->
+        <section class="news">
+            <div class="news-updates">
+                <div class="news-updates-text">
+                    <h2>News Updates</h2>
+                    <p>Get the latest news and updates from the sacco.</p>
+                </div>
+            </div>
+            <div class="news-articles">
+                <div class="news-article">
+                    <div class="news-article-img">
+                        <img src="/public/img/elites-openday.jpeg" alt="News Article Image">
+                    </div>
+                    <div class="news-article-text-main">
+                        <h3>News Article One</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+                <div class="news-aside">
+                    <div class="news-article">
+                        <div class="news-article-text">
+                            <h3>News Article Two</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                            <a href="">Read More</a>
+                        </div>
+                    </div>
+                    <div class="news-article">
+                        <div class="news-article-text">
+                            <h3>News Article Three</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                            <a href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>See all</button>
+        </section>
+
+        <section class="home-actions">
+            <div class="home-action">
+                <a href="">
+                    <div class="home-action-icon">
+                        <i class="fa fa-bullhorn" id="fa"></i>
+                    </div>
+                    <div class="home-action-text">
+                        <h3>Annoucements</h3>
+                        <p>Apply for a loan and get it approved in a few minutes.</p>
+                    </div>
+                    <div class="home-action-icon">
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="home-action">
+                <a href="">
+                    <div class="home-action-icon">
+                        <i class="fa fa-users" id="fa"></i>
+                    </div>
+                    <div class="home-action-text">
+                        <h3>Team</h3>
+                        <p>Apply for a loan and get it approved in a few minutes.</p>
+                    </div>
+                    <div class="home-action-icon">
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="home-action">
+                <a href="">
+                    <div class="home-action-icon">
+                        <i class="fa fa-file-text-o" id="fa"></i>
+                    </div>
+                    <div class="home-action-text">
+                        <h3>Loan Forms</h3>
+                        <p>Apply for a loan and get it approved in a few minutes.</p>
+                    </div>
+                    <div class="home-action-icon">
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="home-action">
+                <a href="">
+                    <div class="home-action-icon">
+                        <i class="fa fa-files-o" id="fa"></i>
+                    </div>
+                    <div class="home-action-text">
+                        <h3>Sacco Rules</h3>
+                        <p>Apply for a loan and get it approved in a few minutes.</p>
+                    </div>
+                    <div class="home-action-icon">
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script src="/public/js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,368 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ----------------------------------------------- */
+/* NAVIGATION BAR */
+/* ----------------------------------------------- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.logo img{
+    width: 70px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    background: none;
+    border: none;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+.side-nav{
+    display: none;
+}
+
+/* ----------------------------------------------- */
+/* WELCOME TEXT */
+/* ----------------------------------------------- */
+.welcome{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    margin: 15px;
+    margin-top: 40px;
+}
+.welcome img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #4CAF50;
+}
+/* ----------------------------------------------- */
+/* ACCOUNT DETAILS AND ACTIONS */
+/* ----------------------------------------------- */
+.acc-details{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 30px;
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.acc-details .acc-bal{
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 6px;
+    padding: 15px 30px;
+}
+
+.increase-shares, .take-loan{
+    background-color: #D5F6EE;
+    color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 2px 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.increase-shares i{
+    font-size: 30px;
+    color: #4CAF50;
+}
+
+.take-loan i{
+    font-size: 30px;
+    color: #FD9101;
+}
+
+.take-loan{
+    background-color: #FFF1D1;
+
+}
+.acc-actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+/* ----------------------------------------------- */
+/* HOME PAGE LINKS */
+/* 36C4A2 */
+/* ----------------------------------------------- */
+/* home actions */
+.home-actions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.home-actions >*{
+    flex: 1 1 40%;
+
+}
+
+.home-action a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+    /* border: 2px solid #C9C9C9; */
+    border-radius: 6px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-decoration: none;
+    color: #111;
+}
+
+/* ----------------------------------------------- */
+/* HOME PAGE NEWS ARTICLES */
+/* 36C4A2 */
+/* ----------------------------------------------- */
+.news-articles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 15px;
+    
+}
+.news-article img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.news-article{
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    padding: 4px 10px;
+    border-radius: 5px;
+    position: relative;
+}
+.news-article .news-article-text-main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #36C4A2;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    /* ----------------------------------------------- */
+/* NAVIGATION BAR */
+/* ----------------------------------------------- */
+
+    .nav-links {
+        display: none;
+    }
+
+    .side-nav{
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 0px;
+        background-color: #333;
+        z-index: 10;
+        transition: all 1s ease-in-out;
+        margin-right: -40px;
+    }
+    
+    .side-nav .close-btn{
+        font-size: 30px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .side-nav li {
+        margin: 50px 10px;
+        list-style: none;
+    }
+
+    .side-nav li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .prof-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .prof-img img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid #4CAF50;
+        object-fit: cover;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    /* ----------------------------------------------- */
+/* WELCOME TEXT */
+/* ----------------------------------------------- */
+    .welcome{
+        gap: 30px;
+        margin-top: 30px;
+    }
+    .welcome img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .welcome-text h1{
+        font-size: 18px;
+    }
+    .welcome-text p{
+        font-size: 14px;
+    }
+
+    /* ----------------------------------------------- */
+/* ACCOUNT DETAILS AND ACTIONS */
+/* ----------------------------------------------- */
+.acc-details{
+    flex-direction: column;
+}
+.acc-details .acc-bal{
+    width: 90%;
+    text-align: center;
+}
+.acc-actions i{
+    font-size: 20px;
+}
+.acc-actions{
+    width: 100%;
+    gap: 10px;
+}
+
+.increase-shares, .take-loan{
+    gap: 5px;
+    width: 100%;
+    text-align: center;
+    padding: 2px 10px;
+}
+.increase-shares p, .take-loan p{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ----------------------------------------------- */
+/* HOME PAGE NEWS ARTICLES */
+/* 36C4A2 */
+/* ----------------------------------------------- */
+
+
+
+}
+
+
+
+/* 980 TABLET */
+@media (max-width: 980px) {
+    /* ----------------------------------------------- */
+    /* HOME ACTIONS */
+    /* ----------------------------------------------- */
+    .home-action a p{
+        font-size: 14px;
+    }
+    .home-action a h3{
+        font-size: 18px;
+    }
+}
+/* 885 TABLET */
+@media (max-width: 885px) {
+    /* ----------------------------------------------- */
+    /* HOME ACTIONS */
+    /* ----------------------------------------------- */
+    .home-action a p{
+        font-size: 12px;
+    }
+    .home-action a h3{
+        font-size: 16px;
+    }
+}
+/* 790 TABLET */
+@media (max-width: 790px) {
+    /* ----------------------------------------------- */
+    /* HOME ACTIONS */
+    /* ----------------------------------------------- */
+    .home-action a .fa{
+        display: none;
+    }
+}
+/* 600 TABLET */
+@media (max-width: 600px) {
+    /* ----------------------------------------------- */
+    /* HOME ACTIONS */
+    /* ----------------------------------------------- */
+    .home-actions >*{
+        flex: 1 1 100%;
+    
+    }
+}
