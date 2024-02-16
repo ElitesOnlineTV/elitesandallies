@@ -21,6 +21,9 @@ app.get('/Signup', (req, res) =>{
 app.get('/Home', (req, res) =>{
     res.render('homepage');
 })
+app.get('/next', (req, res) =>{
+    res.render('next')
+})
 
 
 

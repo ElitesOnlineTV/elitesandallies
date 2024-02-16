@@ -161,44 +161,155 @@ nav {
 }
 
 /* ----------------------------------------------- */
-/* HOME PAGE NEWS ARTICLES */
-/* 36C4A2 */
+/* OUR STORY AND OUR GOAL START */
 /* ----------------------------------------------- */
-.news-articles{
+
+.our-goal{
+    background-color: #e8e9eb;
+}
+.our-goal-rows{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.our-goal-rows img{
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.our-goal, .our-story{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-goal-desc, .our-story-desc{
+    width: 70%;
+    background-color: #fff;
+    margin-top: -180px;
+    padding: 30px;
+    color: #444;
+}
+
+.our-goal-desc h4, .our-story-desc h4{
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+.our-goal-desc p, .our-story-desc p{
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.our-goal-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+/* ----------------------------------------------- */
+/* OUR SERVICES START */
+/* ----------------------------------------------- */
+.service-container{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
     margin: 15px;
-    
+    margin-bottom: 30px;
 }
-.news-article img{
-    width: 300px;
-    height: 200px;
+
+.service-container img{
+    width: 150px;
+}
+
+.service-container >*{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    width: 180px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.service-desc a{
+    text-decoration: none;
+    color: #111;
+    text-decoration: underline;
+}
+
+.service-desc h4{
+    color: #4CAF50;
+}
+
+/* ----------------------------------------------- */
+/* MEET OUR TEAM START  */
+/* ----------------------------------------------- */
+
+.team-container{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.team-container img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
     object-fit: cover;
-    border-radius: 12px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 10px;
 }
-
-.news-article{
-    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
-    padding: 4px 10px;
-    border-radius: 5px;
-    position: relative;
+.contact-btn{
+    display: flex;
 }
-.news-article .news-article-text-main{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #36C4A2;
+.contact-btn a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    background-color: #4CAF50;
     color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 12px;
-    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 20px;
+    text-decoration: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+/* ----------------------------------------------- */
+/* CALL TO ACTION START */
+/* ----------------------------------------------- */
+
+.footer-col{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-bottom: 20px;
 }
 
-
-
+.footer-col>*{
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    color: #fff;
+}
 
 
 
@@ -313,10 +424,44 @@ nav {
 }
 
 /* ----------------------------------------------- */
-/* HOME PAGE NEWS ARTICLES */
-/* 36C4A2 */
+/* OUR STORY AND OUR GOAL START */
+/* ----------------------------------------------- */
+.our-goal-rows{
+    flex-wrap: wrap;
+}
+
+.our-goal-desc h4, .our-story-desc h4{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.our-goal-desc p, .our-story-desc p{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.our-goal-desc, .our-story-desc{
+    margin-top: -120px;
+    padding: 15px;
+    width: 85%;
+}
+/* ----------------------------------------------- */
+/* OUR SERVICES START */
 /* ----------------------------------------------- */
 
+
+.service-container{
+    flex-wrap: wrap;
+}
+
+.service-container >*{
+    width: 100%;
+    box-shadow: none;
+}
+
+.service-container img{
+    width: 100px;
+}
 
 
 }
